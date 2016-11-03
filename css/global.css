@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 250px;
+  height: 200px;
+}
+
+#signup {
+  background-color: gray;
+}
+
+#signin {
+  background-color: #50E3C2;
+}
