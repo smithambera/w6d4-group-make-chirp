@@ -12,27 +12,70 @@
 <body>
   <!-- Content goes here. -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
-       <div class="container-fluid">
-         <div class="navbar-header navbar-right">
-           <!-- <a class="navbar-brand" href="#">Chirp</a> -->
-             <a href="#"><button id="logout" type="button" class="btn  btn-block">Log Out</button></a>
-         </div>
-         <div id="navbar" class="navbar-collapse collapse">
-           <ul class="nav navbar-nav navbar-left">
-             <li><a href="#">Home</a></li>
-             <li><a href="#">Moments</a></li>
-             <li><a href="#">Notifications</a></li>
-             <li><a href="#">Messages</a></li>
-           </ul>
-           <form class="navbar-form navbar-right">
-             <input type="text" class="form-control" placeholder="Search...">
-           </form>
-         </div>
-       </div>
-     </nav>
+    <div class="container-fluid">
+      <div class="navbar-header navbar-right">
+        <!-- <a class="navbar-brand" href="#">Chirp</a> -->
+
+
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Moments</a></li>
+          <li><a href="#">Notifications</a></li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+        <div class="input-group col-sm-6 navbar-right padBox">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button id="logout" class="btn btn-secondary" type="button">Log Out</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
 
   <div class="container">
     <div class="row">
+      <div class="col-sm-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <img src="http://unsplash.it/200?random" alt="profile pic" />
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h5>Name</h5>
+                <h5>Email</h5>
+                <br />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 text-left ">
+                Following
+              </div>
+              <div class="col-xs-6 text-right">
+                Followers
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-9">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <textarea rows="4" cols="50" placeholder="What's happening...">
+            </textarea>
+              <button id="tweet" class="btn tweetbtn" type="button">Tweet</button>
+          </div>
+        </div>
+      </div>
+      <hr />
 
     </div>
   </div>

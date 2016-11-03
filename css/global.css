@@ -3,8 +3,7 @@
 }
 
 img {
-  width: 250px;
-  height: 200px;
+  width: 100%;
 }
 
 #signup {
@@ -20,4 +19,12 @@ img {
 .navbar {
   background-color: #50E3C2;
   color: black;
+}
+
+.padBox {
+  padding-top: 6px;
+}
+
+.tweetbtn {
+  background-color: #50E3C2;
 }
