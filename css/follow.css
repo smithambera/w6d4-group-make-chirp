@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #50E3C2;
+  color: black;
+}
+
+.followCard {
+  border: 1px solid #5B5B5B;
+  background: #50E3C2;
+}
+
+.followCard img {
+  padding: 5px;
+}
+
+.followerSection {
+  margin-top: 15px;
+}

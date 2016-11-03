@@ -31,7 +31,7 @@ function signedupHandler(response) {
   if (typeof response.user != 'undefined') {
     sessionStorage.setItem('chirply', response.user.api_token)
     // TODO: Needs to direct to the chirps view page...
-    window.location.href = '/photos.html'
+    window.location.href = '/mainchirp.html'
   }
 
   else {
@@ -69,5 +69,5 @@ function signinHandler() {
 function signedinHandler(response) {
   sessionStorage.setItem('chirply', response.user.api_token)
   // TODO: Needs to direct to the chirps view page...
-  window.location.href = '/photos.html' 
+  window.location.href = '/mainchirp.html'
 }
