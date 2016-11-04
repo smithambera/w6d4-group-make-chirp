@@ -22,7 +22,8 @@ img {
 }
 
 .padBox {
-  padding-top: 6px;
+  padding-top: 7px;
+  margin-right: -5px;
 }
 
 .tweetbtn {
