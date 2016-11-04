@@ -6,7 +6,9 @@
 img {
   width: 100%;
 }
-
+header {
+  margin-bottom: 40px;
+}
 
 //Styling for the header
 .navbar {
@@ -15,22 +17,26 @@ img {
 }
 
 //Styling for the Body
-// main {
-//     background-color: #5B5B5B;
-// }
+
 
 //Styling for the Left side of the Body
 
 //Styling for the Right side of the Body
-.followCard {
-  border: 1px solid #5B5B5B;
-  background: #50E3C2;
-  img {
-    padding: 5px;
-  }
-}
 .followerSection {
-  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 20vw;
+  // margin-right: 20px;
+  // margin-left: 100px;
+  span {
+    width: 100%;
+    span {
+      width: 80%;
+      overflow: hidden;
+    }
+  }
 }
 
 //Styling for the Footer

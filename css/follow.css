@@ -6,20 +6,29 @@ img {
   width: 100%;
 }
 
+header {
+  margin-bottom: 40px;
+}
+
 .navbar {
   background-color: #50E3C2;
   color: black;
 }
 
-.followCard {
-  border: 1px solid #5B5B5B;
-  background: #50E3C2;
-}
-
-.followCard img {
-  padding: 5px;
-}
-
 .followerSection {
-  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 20vw;
+}
+
+.card span {
+  width: 100%;
+}
+
+.card span span {
+  width: 80%;
+  overflow: hidden;
 }
