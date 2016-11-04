@@ -1,11 +1,10 @@
-//Local API host to use https://82e2e06a.ngrok.io/
+//Local API host to use https://polar-sea-81260.herokuapp.com/
 import React from 'react'
 import ReactDOM from 'react-dom'
 
 import ChirpProfile from '../components/ChirpProfile'
 import ChirpTextbox from '../components/ChirpTextbox'
 import ChirpList from '../components/ChirpList'
-import Signup from '../components/Signup'
 
 
 window.renderView = function() {

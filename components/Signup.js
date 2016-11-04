@@ -21,7 +21,7 @@ class Signup extends React.Component {
       // formData.append('file', this.state.file) --> Add later
       console.log(formData)
 
-      fetch('https://70d64e2c.ngrok.io/signup', {
+      fetch('https://polar-sea-81260.herokuapp.com/signup', {
         body: formData,
         method: 'POST',
         // headers: {

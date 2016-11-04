@@ -60,7 +60,7 @@ function signinHandler() {
   var password = document.querySelector('#password').value
 
   // TODO: Need the path to send captured signin data to DB
-  fetch('https://70d64e2c.ngrok.io/login', {
+  fetch('https://polar-sea-81260.herokuapp.com/login', {
     body: JSON.stringify({
       email: email,
       password: password
