@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom'
 import ChirpProfile from '../components/ChirpProfile'
 import ChirpTextbox from '../components/ChirpTextbox'
 import ChirpList from '../components/ChirpList'
+import Signup from '../components/Signup'
 
 
 window.renderView = function() {

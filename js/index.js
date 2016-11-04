@@ -78,6 +78,7 @@ function signinHandler() {
 function signedinHandler(response) {
   console.log(response)
   sessionStorage.setItem('chirply', response.api_token)
+  sessionStorage.setItem('user', JSON.stringify(response.user))
   // TODO: Needs to direct to the chirps view page...
   window.location.href = './mainchirp.html'
 }
