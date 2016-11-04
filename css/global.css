@@ -29,3 +29,8 @@ img {
 .tweetbtn {
   background-color: #50E3C2;
 }
+
+.smallerPic {
+  height: 40px;
+  width: 50px;
+}
