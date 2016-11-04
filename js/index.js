@@ -105,7 +105,7 @@ function uploadedHandler(response) {
   console.log(response)
   if (typeof response.user != 'undefined') {
     sessionStorage.setItem('chirply', response.user.api_token)
-    // TODO: Needs to direct to the chirps view page...
+    // TODO: Needs to direct to the chirps view page..
     window.location.href = './index.html'
   }
   //
