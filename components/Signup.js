@@ -35,7 +35,7 @@ class Signup extends React.Component {
     uploadedHandler(response) {
       console.log(response)
       if (typeof response.username != 'undefined') {
-        sessionStorage.setItem('chirply', response.api_token);
+        sessionStorage.setItem('sessionToken', response.api_token);
         // TODO: Needs to direct to the chirps view page...
         window.location.href = 'index.html';
       }

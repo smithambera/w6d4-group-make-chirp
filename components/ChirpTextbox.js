@@ -11,6 +11,8 @@ class ChirpProfile extends React.Component {
   }
 
   uploadChirps(e){
+    var tokenId = 'api_token'
+    var token = sessionStorage.getItem(tokenId)
     if (e.key === 'Enter'){
       fetch('https://polar-sea-81260.herokuapp.com/users/user_id/posts', {
         method: 'POST'
