@@ -29,12 +29,11 @@ function uploadHandler() {
 }
 function uploadedHandler(response) {
   console.log(response)
-  if (typeof response.user != 'undefined') {
-    sessionStorage.setItem('chirply', response.api_token)
+  if (typeof response.username != 'undefined') {
+    sessionStorage.setItem('chirply', response.api_token);
     // TODO: Needs to direct to the chirps view page...
-    window.location.href = './index.html'
+    window.location.href = 'index.html';
   }
-  //
   // else {
   //   response.forEach(function(error) {
   //     var errorDiv = document.createElement('div')
