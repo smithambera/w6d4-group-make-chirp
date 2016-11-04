@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
+  //border: 1px dashed red;
 }
 
 img {
-  width: 250px;
-  height: 200px;
+  width: 100%;
 }
 #signup {
   background-color: gray;
@@ -19,3 +19,10 @@ background-color:#50E3C2;
    background-color: #50E3C2;
    color: black;
  }
+
+.padBox {
+  padding-top: 6px;
+}
+.tweetbtn {
+  background-color:#50E3C2;
+}
