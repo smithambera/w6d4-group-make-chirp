@@ -15,15 +15,15 @@ class ChirpProfile extends React.Component {
           <div className="row">
             <div className="col-sm-12 text-center">
               <h5>Name</h5>
-              <h5>Email</h5>
+              <p>Email</p>
               <br />
             </div>
           </div>
           <div className="row">
-            <div className="col-xs-6 text-left ">
+            <div className="col-xs-6 text-left text-muted">
               Following
             </div>
-            <div className="col-xs-6 text-right">
+            <div className="col-xs-6 text-right text-muted">
               Followers
             </div>
           </div>

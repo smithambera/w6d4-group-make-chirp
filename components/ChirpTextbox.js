@@ -10,9 +10,11 @@ class ChirpProfile extends React.Component {
     return <div className="col-sm-9">
       <div className="panel panel-default">
         <div className="panel-body">
-          <textarea rows="4" cols="50" placeholder="What's happening...">
+          <textarea rows="4" cols="65" placeholder="What's happening...">
           </textarea>
-          <button id="tweet" className="btn tweetbtn" type="button">Tweet</button>
+          <div className="text-right">
+          <button id="tweet" className="btn tweetbtn" type="button">Chirped</button>
+        </div>
         </div>
       </div>
     </div>
