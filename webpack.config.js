@@ -1,7 +1,6 @@
 module.exports = {
   entry: {
     global: './js/global.js',
-    signup: './js/signup.js'
   },
   output: {
     path: './js/',
