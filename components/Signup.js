@@ -1,5 +1,7 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
+
+var token;
 
 class Signup extends React.Component {
   constructor(props){
@@ -9,7 +11,8 @@ class Signup extends React.Component {
     this.state = {
       username: '',
       email: '',
-      password: ''
+      password: '',
+      avatar_id: '',
     }
   }
     //Create 2 - Create function to handle Upload event
@@ -18,10 +21,10 @@ class Signup extends React.Component {
       formData.append('username', this.state.username)
       formData.append('email', this.state.email)
       formData.append('password', this.state.password)
-      // formData.append('file', this.state.file) --> Add later
+      formData.append('avatar_id', this.state.avatar_id)
       console.log(formData)
 
-      fetch('https://polar-sea-81260.herokuapp.com/signup', {
+      fetch('https://arcane-reaches-97615.herokuapp.com/signup', {
         body: formData,
         method: 'POST',
         // headers: {
@@ -35,8 +38,7 @@ class Signup extends React.Component {
     uploadedHandler(response) {
       console.log(response)
       if (typeof response.username != 'undefined') {
-        sessionStorage.setItem('sessionToken', response.api_token);
-        // TODO: Needs to direct to the chirps view page...
+        token = sessionStorage.setItem('sessionToken', response.api_token);
         window.location.href = 'index.html';
       }
     }
@@ -54,7 +56,7 @@ class Signup extends React.Component {
     </div>
     <div className="form-group">
     <label htmlFor="email">Email</label>
-    <input type="email" placeholder="sample@gmail.com" value={this.state.email} id="emailSignup" name="email" className="form-control" onChange={(e)=> this.setState({email:e.target.value})} required />
+    <input type="email" placeholder="sample@gmail.com" value={this.state.email} id="emailSignup" name="email" className="form-control" onChange={(e)=> this.setState({email: e.target.value})} required />
     </div>
     <div className="form-group">
     <label htmlFor="password">Password</label>
@@ -62,7 +64,7 @@ class Signup extends React.Component {
     </div>
     <div className="form-group">
     <label htmlFor="photo">Photo</label>
-    <input type="file" id="photoSignup" name="photo" className="form-control" required /*onChange={(e)=> this.setState({name:e.target.file[0]})}*/ />
+    <input type="file" id="photoSignup" /*value={file:e.target.value}*/ name="photo" className="form-control" required onChange={(e)=> this.setState({avatar_id:e.target.value})} />
     </div>
     <div id="errors"></div>
     <div className="form-group">

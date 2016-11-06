@@ -19,7 +19,7 @@ function redirectToSignUp(){
 //   var password = document.querySelector('#password').value //Create variable to collect the password input value for DB
 //
 //   // TODO: Need the path to send captured signin data to DB
-//   fetch('https://70d64e2c.ngrok.io/signup', {
+//   fetch('https://arcane-reaches-97615.herokuapp.com/signup', {
 //     body: JSON.stringify({ //Converts to json format for the back-end to store...
 //       email: email,
 //       password: password
@@ -60,7 +60,7 @@ function signinHandler() {
   var password = document.querySelector('#password').value
 
   // TODO: Need the path to send captured signin data to DB
-  fetch('https://polar-sea-81260.herokuapp.com/login', {
+  fetch('https://arcane-reaches-97615.herokuapp.com/login', {
     body: JSON.stringify({
       email: email,
       password: password
@@ -77,7 +77,7 @@ function signinHandler() {
 
 function signedinHandler(response) {
   console.log(response)
-  sessionStorage.setItem('chirply', response.api_token)
+  sessionStorage.setItem('chirply', response.user.api_token)
   sessionStorage.setItem('user', JSON.stringify(response.user))
   // TODO: Needs to direct to the chirps view page...
   window.location.href = './mainchirp.html'
